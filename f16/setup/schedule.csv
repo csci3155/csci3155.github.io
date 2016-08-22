@@ -1,50 +1,50 @@
 ,,Date,Topic,Reading,Assignment
-1,T,8/25,Welcome.  Getting your money's worth.,,
-,W,8/26,Course Tools. Team Formation.,,
-,R,8/27,Scala Crash Course: Basic Values and Types. Evaluation.,,
-2,T,9/1,Recursion. Data Structures and Pattern Matching.,,
-,W,9/2,Lab 1,,
-,R,9/3,Recursion. Data Structures and Pattern Matching.,,Lab 1 due 9/5
-3,T,9/8,Inductive Definitions.,,
-,W,9/9,Lab 2,,
-,R,9/10,Syntax: Grammars; Scoping; Binding.,,
-4,T,9/15,Syntax: Grammars; Scoping; Binding.,,
-,W,9/16,Lab 2,,
-,R,9/17,Expression Evaluation.,,Lab  2 due 9/19
-5,T,9/22,Operational Semantics.,,
-,W,9/23,Lab 3,,
-,R,9/24,Small-Step Semantics; Evaluation Order; and Short-Circuit Evaluation.Ê,,
-6,T,9/29,Small-Step Semantics; Evaluation Order; and Short-Circuit Evaluation. Dynamic Scoping.,,
-,W,9/30,Lab 3,,
-,R,10/1,Small-Step Semantics; Evaluation Order; and Short-Circuit Evaluation. Dynamic Scoping.,,Lab 3 due 10/3
-7,T,10/6,Midterm Review,,
-,W,10/7,Midterm Review,,
-,R,10/8,Midterm Exam,,
-8,T,10/13,Collections and Callbacks (Higher-Order Functions),,
-,W,10/14,Lab 4,,
-,R,10/15,Type Checking; Records.Ê,,
-9,T,10/20,Type Checking; Records.Ê,,
-,W,10/21,Lab 4,,
-,R,10/22,Type Checking; Records.Ê,,Lab 4 due 10/24
-10,T,10/27,Variables and Pointers.,,
-,W,10/28,Lab 5,,
-,R,10/29,Procedural Abstraction.Ê,,
-11,T,11/3,Variables and Pointers. Procedural Abstraction.,,
-,W,11/4,Lab 5,,
-,R,11/5,Variables and Pointers. Procedural Abstraction.,,Lab 5 due 11/7
-12,T,11/10,Continuations and Regular Expressions.,,
-,W,11/11,Lab 6,,
-,R,11/12,Continuations and Regular Expressions.,,
-13,T,11/17,"Parsing, Regular Expressions, and Continuations.",,
-,W,11/18,Lab 6,,
-,R,11/19,"Parsing, Regular Expressions, and Continuations.",,Lab 6 due 11/21
--,T,11/24,No class. Thanksgiving break.,,
-,W,11/25,No class. Thanksgiving break.,,
-,R,11/26,No class. Thanksgiving break.,,
-14,T,12/1,Objects and Classes.,,
-,W,12/2,Project,,
-,R,12/3,Objects and Classes.,,
-15,T,12/8,Objects and Classes.,,
-,W,12/9,Final Review,,
-,R,12/10,Final Review,,
+1,T,8/23,Welcome.  Getting your money's worth.,,
+,R,8/25,Scala Crash Course: Basic Values and Types. Evaluation.,,
+,F,8/26,Course Tools. Team Formation.,,
+2,T,8/30,Recursion. Data Structures and Pattern Matching.,,
+,R,9/1,Recursion. Data Structures and Pattern Matching.,,
+,F,9/2,Lab 1,,Lab 1 due
+3,T,9/6,Inductive Definitions.,,Exercise 1
+,R,9/8,Syntax: Grammars; Scoping; Binding.,,
+,F,9/9,Lab 2,,
+4,T,9/13,Syntax: Grammars; Scoping; Binding.,,
+,R,9/15,Expression Evaluation.,,
+,F,9/16,Lab 2,,Lab 2 due
+5,T,9/20,Operational Semantics.,,Exercise 2
+,R,9/22,Small-Step Semantics; Evaluation Order; and Short-Circuit Evaluation.Ê,,
+,F,9/23,Lab 3,,
+6,T,9/27,Small-Step Semantics; Evaluation Order; and Short-Circuit Evaluation. Dynamic Scoping.,,
+,R,9/29,Small-Step Semantics; Evaluation Order; and Short-Circuit Evaluation. Dynamic Scoping.,,
+,F,9/30,Lab 3,,Lab 3 due
+7,T,10/4,Midterm Review,,Exercise 3
+,R,10/6,Midterm Exam,,
+,F,10/7,Lab 4,,
+8,T,10/11,Collections and Callbacks (Higher-Order Functions),,
+,R,10/13,Type Checking. Records.Ê,,
+,F,10/14,Lab 4,,
+9,T,10/18,Type Checking. Records.Ê,,
+,R,10/20,Type Checking. Records.Ê,,
+,F,10/21,Lab 4,,Lab 4 due
+10,T,10/25,Variables and Pointers.,,Exercise 4
+,R,10/27,Procedural Abstraction.Ê,,
+,F,10/28,Lab 5,,
+11,T,11/1,Variables and Pointers. Procedural Abstraction.,,
+,R,11/3,Variables and Pointers. Procedural Abstraction.,,
+,F,11/4,Lab 5,,Lab 5 due
+12,T,11/8,Continuations. Regular Expressions.,,Exercise 5
+,R,11/10,Continuations. Regular Expressions.,,
+,F,11/11,Lab 6,,
+13,T,11/15,Continuations. Regular Expressions. Parsing.,,
+,R,11/17,Continuations. Regular Expressions. Parsing.,,
+,F,11/18,Lab 6,,Lab 6 due
+-,T,11/22,No class. Thanksgiving break.,,
+,R,11/24,No class. Thanksgiving break.,,
+,F,11/25,No class. Thanksgiving break.,,
+14,T,11/29,Objects and Classes.,,Exercise 6
+,R,12/1,Objects and Classes.,,
+,F,12/2,Project,,
+15,T,12/6,Project Presentations.,,
+,R,12/8,Final Review,,
+,F,12/9,Final Review,,
 ,,,Final Exam,,
