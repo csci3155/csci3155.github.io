@@ -1,0 +1,47 @@
+/* Background color */
+body {
+    background-color: #efecca;
+}
+
+blockquote {
+	background-color: #faf9db;
+	border-color: #046380;
+}
+
+#menu span.here {
+    background-color: #efecca;
+    border-color: #efecca;
+}
+
+#menu a {
+    background-color: #a7a37e;
+    border-color: #efecca;
+}
+
+#menu a:hover {
+    border-color: #002f2f;
+}
+
+#header, #menu, #footer, .box {
+    background-color: #e6e2af;
+}
+
+.box img {
+    border-color: #e6e2af;
+}
+/* Header text and link text */
+#title, h1, h2, h3, a {
+    color: #046380;
+}
+
+.here {
+    color: #3b3b3b;
+}
+/* Link hover text */
+a:hover {
+    color: #002f2f;
+}
+
+table.schedule tr.weekdayW td {
+    background-color: #d9d6b9;
+}
