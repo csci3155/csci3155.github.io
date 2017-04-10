@@ -48,12 +48,12 @@ body {
 			text-decoration: none;
 			color: #000;
 		} nav ul li a:hover {
-			background-color: #000; /*rgba(0,0,0,1.0);*/
+			background-color: rgba(110,150,154,1.0);
 			color: #fff;
 			text-decoration: bold;
 			border-radius: 10px;
 		} nav ul li a:focus {
-			background-color: #000; /*rgba(0,0,0,1.0);*/
+			background-color: rgba(110,150,154,1.0);
 			color: #fff;
 			text-decoration: bold;
 			border-radius: 10px;
@@ -69,13 +69,14 @@ aside {
 	background-color: rgba(255,255,255,0.7);
 	margin: 15px;
 	padding: 10px;
-	width: 15%;
+	width: 16%;
 	border-radius: 10px;
 }
 	aside section {
 
 	}
 		aside section h3 {
+			font-size: 1.5em;
 			margin-bottom: 5px;
 			text-decoration: underline;
 		}
@@ -122,12 +123,109 @@ main {
 	blockquote pre {
 		margin: 0;	
 	}
+footer {
+	float: left;
+	width: 100%;
+	background-color: rgba(255,255,255,0.7);
+	padding: 20px;
+}
+/*index specific */
+.btn {
+	background-color: rgba(255,255,255,0.8);
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border-radius: 60px;
+	border: none;
+	color: #000;
+	font-size: 1.5em;
+	text-align: left;
+	padding-left: 20px;
+	font-style: bold;
+}
+.collapse {
+	background-color: rgba(255,255,255,0.3);
+	padding: 10px;
+	border-radius: 10px;
+}
+#news div {
+	background-color: rgba(255,255,255,0.3);
+	padding: 10px;
+	border-radius: 10px;
+}
 
 /*Schedule specific*/
 .tableSpace {
 	width: 100%;
-	height: 60000px;
+	height: 1200px;
 }
+.boarderRight{
+	border-right: 1em black;
+}
+table{
+	display: table;
+	border-collapse:collapse;
+}
+tr {
+	border:none;
+}
+th, td {
+	border-collapse:collapse;
+	border: 1px solid black;
+	padding: 15px;
+	padding-top:0;
+	padding-bottom:0;
+	border-top:none;
+	border-bottom:none;
+}
+td:first-of-type, th:first-of-type {
+	border-left:none;
+}
+td:last-of-type, th:last-of-type {
+	border-right:none;
+}
+
+table.schedule { 
+    border-spacing: 0;
+}
+
+table.schedule td,th {
+    padding-top: 1ex;
+    padding-bottom: 1ex;
+    padding-right: 2em;
+    vertical-align: top;
+}
+
+table.schedule th {
+    border-bottom: 2pt solid;
+}
+
+table.schedule .weekday {
+    padding-right: 0.5em;
+    border-right: none;
+    border-left: none;
+}
+
+table.schedule tr.weekdayF td {
+    padding-bottom: 1ex;
+    border-bottom: 1pt dotted;
+}
+
+table.schedule .emph {
+    font-style: italic;	
+}
+
+table.schedule * div {
+    padding-bottom: 1ex;
+}
+table.schedule tr.weekdayW td {
+    background-color: rgba(0,0,0,0.1);
+}
+
+table.schedule tr.weekdayR{
+ 	border-bottom: 1pt dotted;
+}
+
 
 .hidden {
     position: absolute;
