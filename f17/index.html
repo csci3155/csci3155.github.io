@@ -6,8 +6,10 @@
     <title>CSCI 3155 - Home</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/stylesBody.css" type= "text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   </head>
   <body>
+  
     <div class="headbar">
       <header><h1 id="title">Principles of Programming Languages</h1></header>
       <h2 id="subtitle">CSCI 3155 - Fall 2017</h2>
@@ -35,256 +37,273 @@
         </ul>
       </nav>
     </div>
+
     <aside id="sidebar" class="box">
-      <section><h3>&nbsp;&nbsp;&nbsp;Meetings</h3>
-        <p>
-          TR 9:30am-10:45am in
-          ECCR 1B40
-        </p>
+
+      <section><h3 class="current">&nbsp;&nbsp;&nbsp;Course Notes</h3>
+        <div class="current">
+          <i class="fa fa-link" aria-hidden="true"></i>
+          <a href="csci3155-notes.pdf">pdf</a>
+        </div>
       </section>
-      <br>
-      <section><h3>&nbsp;&nbsp;&nbsp;Labs</h3>
-        <p>
-          F 9:00am-9:50am in
-          KOBL 230
-        </p> 
-        <br>
-        <p>
-          F 10:00am-10:50am in
-          KOBL 230
-        </p>
-        <br>
-        <p>
-          F 11:00am-11:50am in
-          KOBL 102
-        </p>
-        <br>
-        <p>
-          F 12:00pm-12:50pm in
-          KOBL 230
-        </p>
-        <br>
-        <p>
-          F 1:00pm-1:50pm in
-          KOBL 230
-        </p>
-      </section>
-      <br>
-      <section><h3>&nbsp;&nbsp;&nbsp;Instructor</h3>
-        <h4>
-          <!-- <img src="img/Matthew.jpg" alt="one person" width=80>
-          <br> -->
-          <a href="matthew.hammer[at]colorado[dot]edu">
-            Matthew A. Hammer
-          </a>
-        </h4>
-        <br>
-        <h4>Office Hours</h4>
-        <p>
-          TBD<br>
-          Or by appointment (<a href="matthew.hammer[at]colorado[dot]edu">email</a>)
-        </p>
-        <br>
-      </section>
-      <br> 
-      <section><h3>&nbsp;&nbsp;&nbsp;Teaching Assistants</h3>
-        <p>
-          <img src="img/AustinHoller.jpg" alt="one person" width=80>
-          <br>
+
+      <section><h3 class="collapseHeader">&nbsp;&nbsp;&nbsp;Staff</h3>
+
+        <!-- Instructor -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#instructor" href="#instructor"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;Instructor</button>
+        <div id="instructor" class="collapse">
+
+          <h4>
+            <!-- <img src="img/Matthew.jpg" alt="one person" width=80><br> -->
+            <i class="fa fa-smile-o fa-5x" aria-hidden="true"></i><br>
+            <i class="fa fa-link" aria-hidden="true"></i>
+            <a href="http://matthewhammer.org/" target="_blank">
+              Matthew A. Hammer
+            </a>
+          </h4>
+
+          <!-- <h4>Office Hours</h4>
+            <p>
+              TBD<br>
+              Or by appointment (<a href="matthew.hammer[at]colorado[dot]edu">email</a>)
+            </p> 
+            <br>-->
+
+        </div>
+
+        <!-- Teaching Assistants -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#ta" href="#ta"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;Teaching Assistants</button>
+        <div id="ta" class="collapse">
+
+          <img src="img/AustinHoller.jpg" alt="Austin's face" width=80><br>
           <a href="mailto:austin.holler@colorado.edu">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
             Austin Holler
           </a>
-        </p>
-        <br>
-        <p>
-          <img src="img/Athithyaa.jpg" alt="one person" width=80>
           <br>
+
+          <img src="img/Athithyaa.jpg" alt="Athithyaa's face" width=80><br>
           <a href="mailto:athithyaa.panchapakesanrajeswari@colorado.edu">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
             Athithyaa Rajeswari
           </a>
-        </p>
-        <br>
-        <!-- <p>
-          <img src="img/name.jpg" alt="one person" width=80>
           <br>
-          <a href="mailto:first.last@colorado.edu">
-            First Last
-          </a>
-        </p>
-        <br> -->
-      </section>
-      <br>
-      <section><h3>&nbsp;&nbsp;&nbsp;Course Assistants</h3>
-        <p>
-          <img src="img/nolan.jpg" alt="one person" width=80><br>
+
+          <!-- <p>
+            <img src="img/name.jpg" alt="one person" width=80>
+            <br>
+            <i class="fa fa-link" aria-hidden="true"></i>
+            <a href="mailto:first.last@colorado.edu">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              First Last
+            </a>
+          </p> 
+          <br>-->
+        </div>
+
+        <!-- Course Assistants -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#ca" href="#ca"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;Course Assistants</button>
+        <div id="ca" class="collapse">
+
+          <img src="img/nolan.jpg" alt="Nolan's face" width=80><br>
           <a href="mailto:Nolan.Cretney@colorado.edu">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
             Nolan Cretney
           </a>
-        <!-- </p>
-        <br>
-        <br>
-        <p>
-          <img src="img/name.jpg" alt="one person" width=80>
           <br>
+
+          <!-- <img src="img/name.jpg" alt="one person" width=80><br> -->
+          <i class="fa fa-smile-o fa-5x" aria-hidden="true"></i><br>
           <a href="mailto:first.last@colorado.edu">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
             First Last
           </a>
-        </p>
-        <br>
-        <br>
-        <p>
-          <img src="img/name.jpg" alt="one person" width=80>
           <br>
-          <a href="mailto:first.last@colorado.edu">
-            First Last
+
+          <!-- <p>
+            <img src="img/name.jpg" alt="one person" width=80><br>
+            <i class="fa fa-smile-o fa-5x" aria-hidden="true"></i><br>
+            <a href="mailto:first.last@colorado.edu">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              First Last
+            </a>
+          </p>
+          <br> -->
+
+        </div>
+
+        <!-- Other Assistats -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#oa" href="#oa"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;Other Assistants</button>
+        <div id="oa" class="collapse">
+
+          <h4>COG Admin</h4>
+
+          <!-- <img src="img/name.jpg" alt="one person" width=80><br> -->
+          <i class="fa fa-smile-o fa-5x" aria-hidden="true"></i><br>
+          <a href="mailto:Evan.Su@colorado.edu">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            Evan Su
           </a>
-        </p> -->
-        <br>
+          <br>
+
+        </div>
       </section>
-      <br>
-      <section><h3>&nbsp;&nbsp;&nbsp;Other Assistance</h3>
-        <h4>COG Admin</h4>
-        <a href="mailto:Evan.Su@colorado.edu">
-          Evan Su
-        </a>
-        <br>
+      <section><h3 class="current">&nbsp;&nbsp;&nbsp;Office Hours</h3>
+        <div class="current">
+          <i class="fa fa-link" aria-hidden="true"></i>
+          <a href="https://calendar.google.com/calendar/embed?src=colorado.edu_v6qrj6ap1gi1i49pod0irqg98k%40group.calendar.google.com&ctz=America/Denver">
+            OH Calendar
+          </a>
+          <!-- <a href="#">
+            Office Hours Calendar
+          </a> -->
+        </div>
       </section>
-      <br>
-      <section><h3>&nbsp;&nbsp;&nbsp;Office Hours</h3>
-        <!-- <a href="https://calendar.google.com/calendar/embed?src=colorado.edu_v6qrj6ap1gi1i49pod0irqg98k%40group.calendar.google.com&ctz=America/Denver">
-          OH Calendar
-        </a> -->
-        <a href="#">
-          Office Hours Calendar
-        </a>
-        <br>
+      <section><h3 class="current">&nbsp;&nbsp;&nbsp;Meetings</h3>
+        <div class="current">
+          <ul>
+            <li>TR 9:30am-10:45am in
+            ECCR 1B40</li>
+          </ul>
+        </div>
       </section>
-      <br>
-      <section><h3>&nbsp;&nbsp;&nbsp;Course Notes</h3>
-        <a href="csci3155-notes.pdf">pdf</a>
-        <br>
+      <section><h3 class="current">&nbsp;&nbsp;&nbsp;Labs</h3>
+        <div class="current">
+          <ul>
+            <li> F 9:00am-9:50am in
+            KOBL 230</li>
+            <li>F 10:00am-10:50am in
+            KOBL 230</li>
+            <li>F 11:00am-11:50am in
+            KOBL 102</li>
+            <li>F 12:00pm-12:50pm in
+            KOBL 230</li>
+            <li>F 1:00pm-1:50pm in
+            KOBL 230</li>
+          </ul>
+        </div>
       </section>
-      <br>
     </aside>
+
     <main id="content">
       <a href="#sidebar" role="button" class="hidden"> Skip to Sidebar </a>
-      <section class="container" id="news"><h3>News</h3>
-          <div id="news1">
+      <section id="news" ><h3 class="current">&nbsp;&nbsp;&nbsp;News</h3>
+          <div id="news1" class="current">
             <p>
             There is no News to report at this time
             </p>
           </div>
       </section>
-      <section><!-- overview -->
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#overview" href="#overview">Course Overview and Goals</button>
-        <div id="overview" class="collapse">
-          <p>
-          This course is about principles, concepts, and ideas that underly
-          programming languages.  But what does this statement mean?
-          </p>
+      <section class="syllabus">
+      <h3 class="collapseHeader">&nbsp;&nbsp;&nbsp;Syllabus</h3>
+      <!-- overview -->
+      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#overview" href="#overview"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Course Overview and Goals</button>
+      <div id="overview" class="collapse">
+        <p>
+        This course is about principles, concepts, and ideas that underly
+        programming languages.  But what does this statement mean?
+        </p>
 
-          <p>
-          As a student of computer science, it is completely reasonable to think
-          and ask, ``Why bother?  I'm proficient and like programming in Ruby.
-          Isn't that enough?  Isn't language choice just a matter of taste?  If
-          not, should I be using another language?''
-          </p>
+        <p>
+        As a student of computer science, it is completely reasonable to think
+        and ask, ``Why bother?  I'm proficient and like programming in Ruby.
+        Isn't that enough?  Isn't language choice just a matter of taste?  If
+        not, should I be using another language?''
+        </p>
 
-          <p>
-          Certainly, there are social factors and an aspect of personal
-          preference that affect the programming languages that we use.  But
-          there is also a body of principles and mathematical theories that
-          allow us to discuss and think about languages in a rigorous manner.
-          We study these underpinnings because a language affects the way one
-          approaches problems working in that language and affects the way one
-          implements that language.  At the end of this course, we hope that you
-          will have grown in the following ways:
-          </p>
-          <ul>
-            <li>
-            You will be able to learn new languages quickly and select a
-            suitable one for your task.
-            </li>
-            <li>
-            You will gain new ways of viewing computation and
-            approaching algorithmic problems.
-            </li>
-            <li>
-            You will gain new ways of viewing programs.
-            </li>
-            <li>
-            You will gain insight into avoiding mistakes for when
-            you design languages.
-            </li>
-          </ul>
-
-
-          <p>
-          We will <em>dissect</em> programming languages by constructing
-          interpreters.  The semester project is to construct an interpreter for
-          <a
-           href="http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf">JavaScript</a>
-          (incrementally).  We will see that interpreters are the basis for
-          realizing computation, and we will study the programming language
-          theory that enable us to reason carefully about a language's design
-          and implementation.  Our approach will be gradual in that we will
-          initially consider a small subset of JavaScript and then slowly grow
-          the aspects of the language that we consider.
-          </p>
-
-          <p>Incoming students often expect this course to be what I will call a
-          trip to the Zoo of Programming Languages.  While it is certainly
-          interesting to go to the zoo, we seek a more informative and
-          sciencific study of the underlying principles.  A more apt analogy is
-          an <b>anatomy</b> course where we will study the "guts" and
-          inner-workings of programming languages.  After this course, such an
-          anatomological study will enable us to compare and constrast
-          programming languages in a substantive manner and address the learning
-          goals outlined above.</p>
-
-          <p>
-          The course covers many aspects of using, understanding, and
-          reasoning about programming languages (e.g., syntax, scoping,
-          induction, data types, and typing).  We will build up a set
-          of mathematical tools for careful discourse.
-          A significant part is devoted to abstraction, that is, how
-          languages help programming in the large (e.g.,
-          subtyping polymorphism, parametric polymorphism, modules, and objects).
-          </p>
+        <p>
+        Certainly, there are social factors and an aspect of personal
+        preference that affect the programming languages that we use.  But
+        there is also a body of principles and mathematical theories that
+        allow us to discuss and think about languages in a rigorous manner.
+        We study these underpinnings because a language affects the way one
+        approaches problems working in that language and affects the way one
+        implements that language.  At the end of this course, we hope that you
+        will have grown in the following ways:
+        </p>
+        <ul>
+          <li>
+          You will be able to learn new languages quickly and select a
+          suitable one for your task.
+          </li>
+          <li>
+          You will gain new ways of viewing computation and
+          approaching algorithmic problems.
+          </li>
+          <li>
+          You will gain new ways of viewing programs.
+          </li>
+          <li>
+          You will gain insight into avoiding mistakes for when
+          you design languages.
+          </li>
+        </ul>
 
 
-          <p>
-          This course prepares you for introductory courses on both programming
-          language implementation
-          (e.g., <a href="http://www.cs.colorado.edu/courses/csci4555.html">CSCI
-          4555</a>) and programming language semantics
-          (e.g., <a href="http://www.cs.colorado.edu/courses/csci5535.html">CSCI
-          5535</a>).
-          </p>
-        </div>
-      </section>
-      <section><!-- Prerequisites -->
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#prerequisites" href="#prerequisites">Prerequisites</button>
-        <div id="prerequisites" class="collapse">
+        <p>
+        We will <em>dissect</em> programming languages by constructing
+        interpreters.  The semester project is to construct an interpreter for
+        <a
+         href="http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf">JavaScript</a>
+        (incrementally).  We will see that interpreters are the basis for
+        realizing computation, and we will study the programming language
+        theory that enable us to reason carefully about a language's design
+        and implementation.  Our approach will be gradual in that we will
+        initially consider a small subset of JavaScript and then slowly grow
+        the aspects of the language that we consider.
+        </p>
 
-          <p>
-          The prerequisites for this course are CSCI 2270 (Computer Science 2: Data Structures)
-          and CSCI 2824 (Discrete Mathematics).  It is also suggested that one
-          of CSCI 2400 (Computer Systems) or ECEN
-          2120 (Computers as Components) be either previously taken or
-          be taken in the same semester.
-          </p>
+        <p>Incoming students often expect this course to be what I will call a
+        trip to the Zoo of Programming Languages.  While it is certainly
+        interesting to go to the zoo, we seek a more informative and
+        sciencific study of the underlying principles.  A more apt analogy is
+        an <b>anatomy</b> course where we will study the "guts" and
+        inner-workings of programming languages.  After this course, such an
+        anatomological study will enable us to compare and constrast
+        programming languages in a substantive manner and address the learning
+        goals outlined above.</p>
 
-          <p>If you have not already taken these courses or if you have any concerns,
-          please talk with the instructor. Proficiency in programming is absolutely
-          expected, though there is no specific language required. This means that you
-          should be able to pick up a new programming language with relative ease. You
-          will be expected to learn new programming languages with guidance but
-          relatively independently in this course.  </p>
-        </div>
-      </section>
-      <section> <!-- Requirements -->
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#requirements" href="#requirements">Requirements</button>
+        <p>
+        The course covers many aspects of using, understanding, and
+        reasoning about programming languages (e.g., syntax, scoping,
+        induction, data types, and typing).  We will build up a set
+        of mathematical tools for careful discourse.
+        A significant part is devoted to abstraction, that is, how
+        languages help programming in the large (e.g.,
+        subtyping polymorphism, parametric polymorphism, modules, and objects).
+        </p>
+
+
+        <p>
+        This course prepares you for introductory courses on both programming
+        language implementation
+        (e.g., <a href="http://www.cs.colorado.edu/courses/csci4555.html">CSCI
+        4555</a>) and programming language semantics
+        (e.g., <a href="http://www.cs.colorado.edu/courses/csci5535.html">CSCI
+        5535</a>).
+        </p>
+      </div>
+      <!-- Prerequisites -->
+      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#prerequisites" href="#prerequisites"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Prerequisites</button>
+      <div id="prerequisites" class="collapse">
+
+        <p>
+        The prerequisites for this course are CSCI 2270 (Computer Science 2: Data Structures)
+        and CSCI 2824 (Discrete Mathematics).  It is also suggested that one
+        of CSCI 2400 (Computer Systems) or ECEN
+        2120 (Computers as Components) be either previously taken or
+        be taken in the same semester.
+        </p>
+
+        <p>If you have not already taken these courses or if you have any concerns,
+        please talk with the instructor. Proficiency in programming is absolutely
+        expected, though there is no specific language required. This means that you
+        should be able to pick up a new programming language with relative ease. You
+        will be expected to learn new programming languages with guidance but
+        relatively independently in this course.  </p>
+      </div>
+      <!-- Requirements -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#requirements" href="#requirements"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Requirements</button>
         <div id="requirements" class="collapse">
 
           <p>
@@ -399,9 +418,8 @@
             time per week or 16 hours per two-week lab.
           </p>
         </div>
-      </section>
-      <section><!-- Evaluation -->
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#evaluation" href="#evaluation">Evaluation</button>
+      <!-- Evaluation -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#evaluation" href="#evaluation"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Evaluation</button>
         <div id="evaluation" class="collapse">
 
           <p>
@@ -431,9 +449,8 @@
           </ul>
           </p>
         </div>
-      </section>
-      <section><!-- Textbook and Resources -->
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#resources" href="#resources">Textbook and Resources</button>
+      <!-- Textbook and Resources -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#resources" href="#resources"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Textbook and Resources</button>
         <div id="resources" class="collapse">
 
           <p>
@@ -512,9 +529,8 @@
             </ul>
           </p>
         </div>
-      </section>
-      <section><!-- Tools -->
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#tools" href="#tools">Tools</button>
+      <!-- Tools -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#tools" href="#tools"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Tools</button>
         <div id="tools" class="collapse">
 
           <p>
@@ -547,9 +563,8 @@
             </ul>
           </p>
         </div>
-      </section>
-      <section><!-- Integrity of the Course Materials -->
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#materials" href="#materials">Integrity of the Course Materials</button>
+      <!-- Integrity of the Course Materials -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#materials" href="#materials"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Integrity of the Course Materials</button>
         <div id="materials" class="collapse">
 
           <p>
@@ -570,9 +585,8 @@
             You are welcome and encouraged to support each other in the learning of the material.
           </p>
         </div>
-      </section>
-      <section><!-- Collaboration Policy -->
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collaboration" href="#collaboration">Collaboration Policy</button>
+      <!-- Collaboration Policy -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collaboration" href="#collaboration"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Collaboration Policy</button>
         <div id="collaboration" class="collapse">
           <p>
           You are welcome and encouraged to work together in learning the
@@ -596,9 +610,8 @@
           Academic sanctions may include, but is not limited to, a zero for the assignment or a failing grade for the course.
           </p>
         </div>
-      </section>
-      <section><!-- Classroom Behavior -->
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#behavior" href="#behavior">Classroom Behavior</button>
+      <!-- Classroom Behavior -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#behavior" href="#behavior"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Classroom Behavior</button>
         <div id="behavior" class="collapse">
           <p>
           We trust and expect everyone to behave in a civil and courteous
@@ -632,9 +645,8 @@
           </blockquote>
           </p>
         </div>
-      </section>
-      <section><!-- Disability -->
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#disability" href="#disability">Disability</button>
+      <!-- Disability -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#disability" href="#disability"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Disability</button>
         <div id="disability" class="collapse">
           <p>
           We will go by
@@ -655,9 +667,8 @@
           </blockquote>
           </p>
         </div>
-      </section>
-      <section><!-- Religious Observances -->
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#religious" href="#religious">Religious Observances</button>
+      <!-- Religious Observances -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#religious" href="#religious"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Religious Observances</button>
         <div id="religious" class="collapse">
           <p>
             We will go by the
@@ -679,9 +690,8 @@
           </p>
           </blockquote>
         </div>
-      </section>
-      <section><!-- Acknowledgments -->
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#acknowledgments" href="#acknowledgments">Acknowledgments</button>
+      <!-- Acknowledgments -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#acknowledgments" href="#acknowledgments"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Acknowledgments</button>
         <div id="acknowledgments" class="collapse">
           <p>
           This course has benefited from the organization and experience from
@@ -691,11 +701,17 @@
         </div>
       </section>
     </main>
+
     <footer>
       <p>
-        For more information about this course and its materials please contact us here...  
+        This course was developed by Dr. Evan Chang and his team. Contact him here :  
+        <a href="mailto:evan.chang@colorado.edu" role="button">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <div class="hidden">This will direct you to our contact page.</div>
+        </a>
       </p>
     </footer>
+
     <!-- Scripts -->
     <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

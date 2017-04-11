@@ -12,6 +12,32 @@ body {
 	background-color: rgba(160,200,204,1.0);
 }
 
+/* resolve contrast errors */
+p {
+	color: #000;
+	font-size: 1.2em;
+}
+aside a {
+	color: #00f;
+	font-size: 1.2em;
+}
+main a {
+	color: #00f;
+	font-size: 1em;
+}
+main ul li {
+	color: #000;
+	font-size: 1.2em;
+}
+td {
+	color: #000;
+	font-size: 1.2em;
+}
+
+h3 {
+	font-style: bold;
+}
+
 .headbar {
 	background-color: rgba(255,255,255,0.7);
 	margin: 0;
@@ -64,21 +90,32 @@ body {
 			text-decoration: underline;
 			border-radius: 10px;
 		}
+h3.current {
+		background-color: #ff0;
+		/*background-color: rgba(255,255,255,0.8);*/
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 0px;
+		border-radius: 60px 60px 0px 0px;
+	}
 aside {
 	float: right;
-	background-color: rgba(255,255,255,0.7);
+	background-color: rgba(255,255,255,0.1);
 	margin: 15px;
 	padding: 10px;
-	width: 16%;
+	width: 20%;
 	border-radius: 10px;
 }
 	aside section {
 
 	}
 		aside section h3 {
-			font-size: 1.5em;
+			font-size: 1.2em;
 			margin-bottom: 5px;
-			text-decoration: underline;
+			/*text-decoration: underline;*/
+		}
+		aside section ul {
+			padding-left: 15px;
 		}
 
 main.full-width {
@@ -87,24 +124,16 @@ main.full-width {
 }
 main {
 	float: left;
-	width: 79%;
+	width: 75%;
 	margin: 15px;
 	background-color: rgba(255,255,255,0.1);
 	border-radius: 10px;
 }
 	main section {
 		margin: 15px;
-		padding: 10px;
-		background-color: rgba(255,255,255,0.2);
-		border-radius: 30px;
-
 	}
 	main section h3 {
-		background-color: rgba(255,255,255,0.8);
-		width: 100%;
-		padding: 10px;
-		margin-bottom: 15px;
-		border-radius: 60px;
+
 	}
 	main section p {
 		text-align: left;
@@ -131,40 +160,73 @@ footer {
 }
 /*index specific */
 .btn {
+	/*background-color: #ff0;*/
 	background-color: rgba(255,255,255,0.8);
 	width: 100%;
 	padding: 10px;
-	margin-bottom: 15px;
-	border-radius: 60px;
-	border: none;
+	border-radius: 0px;
+	border: thick;
 	color: #000;
 	font-size: 1.5em;
 	text-align: left;
 	padding-left: 20px;
 	font-style: bold;
 }
-.collapse {
-	background-color: rgba(255,255,255,0.3);
-	padding: 10px;
-	border-radius: 10px;
+/*.btn:first-of-type{
+	border-radius: 60px 0px 0px 0px;
+}*/
+.btn:last-of-type{
+	border-radius: 0px 0px 60px 0px;
 }
-#news div {
-	background-color: rgba(255,255,255,0.3);
+.btn:hover {
+	background-color: rgba(255,255,255,0.9);
+	color: #000;
+	text-decoration: underline;
+}
+.btn:focus {
+	background-color: rgba(255,255,255,0.9);
+	color: #000;
+	text-decoration: underline;
+}
+h3.collapseHeader {
+	background-color: #ff0;
+	/*background-color: rgba(255,255,255,0.8);*/
+	width: 100%;
 	padding: 10px;
-	border-radius: 10px;
+	border: thick;
+	color: #000;
+	font-size: 1.5em;
+	text-align: left;
+	padding-left: 20px;
+	font-style: bold;
+	border-radius: 60px 0px 0px 0px;
+	margin: 0;
+}
+.collapse {
+	background-color: rgba(255,255,255,0.9);
+	/*background-color: rgba(255,255,255,0.5);*/
+	padding: 10px;
+	border-radius: 0px 0px 15px 15px;
+	border-color: #000;
+	margin-bottom: 15px;
+}
+.current {
+	background-color: rgba(255,255,255,0.8);
+	/*background-color: rgba(255,255,255,0.5);*/
+	padding: 10px;
+	border-radius: 0px 0px 15px 15px;
+	margin-bottom: 15px;
 }
 
 /*Schedule specific*/
-.tableSpace {
-	width: 100%;
-	height: 1200px;
-}
 .boarderRight{
 	border-right: 1em black;
 }
+
 table{
 	display: table;
 	border-collapse:collapse;
+	width: 100%;
 }
 tr {
 	border:none;
@@ -219,11 +281,26 @@ table.schedule * div {
     padding-bottom: 1ex;
 }
 table.schedule tr.weekdayW td {
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(255,255,0,0.5);
 }
 
 table.schedule tr.weekdayR{
  	border-bottom: 1pt dotted;
+}
+
+tr.midterm, tr.final{
+	border-top: 1pt dotted;
+}
+
+td.midterm, td.final{
+	background-color: rgba(255,255,0,0.9);
+}
+#fall_image {
+	height: 200px;
+	width: 100%;
+}
+tr.fallBreak {
+	border-bottom: 1pt dotted;
 }
 
 
