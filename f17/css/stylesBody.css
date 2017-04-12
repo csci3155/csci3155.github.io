@@ -1,311 +1,341 @@
 /*stylesBody.css*/
-*,
-*:before,
-*:after{
-	margin:0;
-	padding:0;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-body {
-	background-color: rgba(160,200,204,1.0);
-}
 
-/* resolve contrast errors */
-p {
-	color: #000;
-	font-size: 1.2em;
-}
-aside a, footer a {
-	color: #00f;
-	font-size: 1.2em;
-}
-main a {
-	color: #00f;
-	font-size: 1em;
-}
-main ul li {
-	color: #000;
-	font-size: 1.2em;
-}
-td {
-	color: #000;
-	font-size: 1.2em;
-}
+/*always useful*/
+	*,
+	*:before,
+	*:after{
+		margin:0;
+		padding:0;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	} 
+	.hidden {
+	    position: absolute;
+	    top: -9999em;
+	    left: -9999em;
+	}/* .hidden */
 
-h3 {
-	font-style: bold;
-}
-
-.headbar {
-	background-color: rgba(255,255,255,0.7);
-	margin: 0;
-	padding: 20px;	
-	width: 100%;
-}
-	header {
-
+/* declaring fonts */
+	* {
+		font-family: 'Roboto', sans-serif;
 	}
-	h1 {
+	h1, h2, h3, h4 {
+		font-family: 'BioRhyme', serif;
+	}
 
+/* set color for whole page */
+/*Please note that there are a few places
+which use an accent yellow collor... and 
+one place that uses red... be advised*/
+	body {
+		background-color: rgba(160,200,204,1.0);
+		width: 100%;
 	}
-	h2 {
 
+/* resolves variety of contrast errors */
+	p {
+		color: #000;
+		font-size: 1.2em;
 	}
-	nav {
-		/*overflow: hidden;*/
-    	padding: 0 1em 0 1em;
-    	float: right;
+	aside a, footer a {
+		color: #00f;
+		font-size: 1.2em;
 	}
-		nav ul {
-			padding: 0px;
-			margin: 0px;
+	main a {
+		color: #00f;
+		font-size: 1.2em;
+	}
+	main ul li {
+		color: #000;
+		font-size: 1.1em;
+	}
+	td {
+		color: #000;
+		font-size: 1em;
+	}
+	h3 {
+		font-style: bold;
+	}
+	code {
+		color: #f00;
+	}
+
+/*Applies to all html files*/
+
+	/*File header*/
+		h1 {
+				float: left;
+				width: 100%;
 		}
-		nav ul li {
-			list-style-type: none;
+		.headbar {
+			background-color: rgba(255,255,255,0.7);
+			margin: 0;
+			padding: 20px;	
+			width: 100%;
+			height: 12em;
 			float: left;
-		    margin-left: 1em;
-		    text-align: center;
 		}
-		nav ul li a {
-			padding: 10px;
-			padding-bottom: 0px;
-			text-decoration: none;
-			color: #000;
-		} nav ul li a:hover {
-			background-color: rgba(110,150,154,1.0);
-			color: #fff;
-			text-decoration: bold;
-			border-radius: 10px;
-		} nav ul li a:focus {
-			background-color: rgba(110,150,154,1.0);
-			color: #fff;
-			text-decoration: bold;
-			border-radius: 10px;
+			.headbar h2 {
+				float: left;
+			}
+		nav {
+			padding: 0 1em 0 1em;
+			font-size: 1.4em;
+			margin-top: 2.4em;
+			float: right;
+			margin-bottom: 20px;
 		}
-		.active {
+			nav ul {
+				padding: 0px;
+				margin: 0px;
+			}
+				nav ul li {
+					list-style-type: none;
+					float: left;
+				    margin-left: 1.5em;
+				    text-align: center;
+				}
+					nav ul li a {
+						padding: 10px;
+						padding-bottom: 0px;
+						text-decoration: none;
+						font-size: 1em;
+						color: #000;
+					} nav ul li a:hover {
+						background-color: rgba(110,150,154,1.0);
+						color: #fff;
+						text-decoration: bold;
+						border-radius: 10px;
+					} nav ul li a:focus {
+						background-color: rgba(110,150,154,1.0);
+						color: #fff;
+						text-decoration: bold;
+						border-radius: 10px;
+					}
+		.active { /* refers to an active tab of navigaiton */
 			background-color: rgba(160,200,204,1.0);
 			padding: 10px;
 			text-decoration: underline;
 			border-radius: 10px;
 		}
-h3.current {
-		background-color: #ff0;
-		/*background-color: rgba(255,255,255,0.8);*/
-		width: 100%;
-		padding: 10px;
-		margin-bottom: 0px;
-		border-radius: 60px 60px 0px 0px;
-	}
-aside {
-	float: right;
-	background-color: rgba(255,255,255,0.1);
-	margin: 15px;
-	padding: 10px;
-	width: 20%;
-	border-radius: 10px;
-}
-	aside section {
 
-	}
-		aside section h3 {
-			font-size: 1.2em;
-			margin-bottom: 5px;
-			/*text-decoration: underline;*/
+	/*aside and main*/
+		h3.current { /*refers to a non accordian header*/
+			background-color: #ff0;
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 0px;
+			border-radius: 60px 60px 0px 0px;
 		}
-		aside section ul {
-			padding-left: 15px;
+		.btn { /* only used to describe buttons in collapsable structures */
+			background-color: rgba(255,255,255,0.8);
+			width: 100%;
+			padding: 10px;
+			border-radius: 0px;
+			border: thick;
+			color: #000;
+			font-size: 1.5em;
+			text-align: left;
+			padding-left: 20px;
+			font-style: bold;
+		} .btn:last-of-type{
+			border-radius: 0px 0px 60px 0px;
+		} .btn:hover {
+			background-color: rgba(255,255,255,0.9);
+			color: #000;
+			text-decoration: underline;
+		} .btn:focus {
+			background-color: rgba(255,255,255,0.9);
+			color: #000;
+			text-decoration: underline;
 		}
 
-main.full-width {
-	margin-left: 1em;
-	margin-right: 1em;
-}
-main {
-	float: left;
-	width: 75%;
-	margin: 15px;
-	background-color: rgba(255,255,255,0.1);
-	border-radius: 10px;
-}
-	main section {
-		margin: 15px;
-	}
-	main section h3 {
+		.collapseHeader { /* header for collapsed elements */
+			background-color: #ff0;
+			width: 100%;
+			padding: 10px;
+			border: thick;
+			color: #000;
+			text-align: left;
+			padding-left: 20px;
+			font-style: bold;
+			border-radius: 60px 0px 0px 0px;
+			margin: 0;
+		}
 
-	}
-	main section p {
-		text-align: left;
-		margin: 10px;
-	}
-	main section ul {
-		padding-left: 50px;
-	}
-	blockquote {
-		background-color: rgba(255,255,255,0.2);
-		border: 1px dashed;
-		padding: 1ex 1em 1ex 1em;
-		margin: 10px;
-	}
+		.collapse { /* the collabpse div holds that which is collapsed */
+			background-color: rgba(255,255,255,0.9);
+			padding: 10px;
+			border-radius: 0px 0px 15px 15px;
+			border-color: #000;
+			margin-bottom: 15px;
+		}
 
-	blockquote pre {
-		margin: 0;	
-	}
-footer {
-	float: left;
-	width: 100%;
-	background-color: rgba(255,255,255,0.8);
-	padding: 20px;
-}
-/*index specific */
-.btn {
-	/*background-color: #ff0;*/
-	background-color: rgba(255,255,255,0.8);
-	width: 100%;
-	padding: 10px;
-	border-radius: 0px;
-	border: thick;
-	color: #000;
-	font-size: 1.5em;
-	text-align: left;
-	padding-left: 20px;
-	font-style: bold;
-}
-/*.btn:first-of-type{
-	border-radius: 60px 0px 0px 0px;
-}*/
-.btn:last-of-type{
-	border-radius: 0px 0px 60px 0px;
-}
-.btn:hover {
-	background-color: rgba(255,255,255,0.9);
-	color: #000;
-	text-decoration: underline;
-}
-.btn:focus {
-	background-color: rgba(255,255,255,0.9);
-	color: #000;
-	text-decoration: underline;
-}
-h3.collapseHeader {
-	background-color: #ff0;
-	/*background-color: rgba(255,255,255,0.8);*/
-	width: 100%;
-	padding: 10px;
-	border: thick;
-	color: #000;
-	font-size: 1.5em;
-	text-align: left;
-	padding-left: 20px;
-	font-style: bold;
-	border-radius: 60px 0px 0px 0px;
-	margin: 0;
-}
-.collapse {
-	background-color: rgba(255,255,255,0.9);
-	/*background-color: rgba(255,255,255,0.5);*/
-	padding: 10px;
-	border-radius: 0px 0px 15px 15px;
-	border-color: #000;
-	margin-bottom: 15px;
-}
-.current {
-	background-color: rgba(255,255,255,0.8);
-	/*background-color: rgba(255,255,255,0.5);*/
-	padding: 10px;
-	border-radius: 0px 0px 15px 15px;
-	margin-bottom: 15px;
-}
+		.current { /* a non collapsable element */
+			background-color: rgba(255,255,255,0.8);
+			padding: 10px;
+			border-radius: 0px 0px 15px 15px;
+			margin-bottom: 15px;
+		}
 
-/*Schedule specific*/
-.boarderRight{
-	border-right: 1em black;
-}
+	/*aside*/
+		aside {
+			float: right;
+			background-color: rgba(255,255,255,0.1);
+			margin: 15px;
+			padding: 10px;
+			width: 20%;
+			border-radius: 10px;
+		}
+			aside section h3 {
+				font-size: 1.5em;
+				margin-bottom: 5px;
+				/*text-decoration: underline;*/
+			}
+			aside section ul {
+				padding-left: 15px;
+			}
 
-table{
-	display: table;
-	border-collapse:collapse;
-	width: 100%;
-}
-tr {
-	border:none;
-}
-th, td {
-	border-collapse:collapse;
-	border: 1px solid black;
-	padding: 15px;
-	padding-top:0;
-	padding-bottom:0;
-	border-top:none;
-	border-bottom:none;
-}
-td:first-of-type, th:first-of-type {
-	border-left:none;
-}
-td:last-of-type, th:last-of-type {
-	border-right:none;
-}
+	/*main*/
+		main {
+			float: left;
+			width: 75%;
+			margin: 15px;
+			background-color: rgba(255,255,255,0.1);
+			border-radius: 10px;
+		}
+			main section {
+				margin: 15px;
+			}
+				main section h3 {
+					font-size: 2em;
+				}
+				main section p {
+					text-align: left;
+					margin: 10px;
+				}
+				main section ul {
+					padding-left: 50px;
+				}
+		blockquote { /* legacy code */
+			background-color: rgba(255,255,0,0.2);
+			border: 1px dashed;
+			padding: 1ex 1em 1ex 1em;
+			margin: 10px;
+		}
+			blockquote pre {
+				margin: 0;	
+			}
 
-table.schedule { 
-    border-spacing: 0;
-}
+	/*footer*/
+		footer {
+			float: left;
+			width: 100%;
+			background-color: rgba(255,255,255,0.8);
+			padding: 20px;
+		}
+	
+/* Specific to indifidual html files */
+	
+	/*index.html*/
+		#grading h4 {
+			padding: 15px;
+			background-color: #ff0;
+			text-decoration: underline;
+			border-radius: 0px 30px 0px 30px;
+			width: 100%;
+		}
 
-table.schedule td,th {
-    padding-top: 1ex;
-    padding-bottom: 1ex;
-    padding-right: 2em;
-    vertical-align: top;
-}
+	/*schedule.html*/
+		.boarderRight{
+			border-right: 1em black;
+		}
 
-table.schedule th {
-    border-bottom: 2pt solid;
-}
+		table{
+			display: table;
+			border-collapse:collapse;
+			width: 100%;
+		}
 
-table.schedule .weekday {
-    padding-right: 0.5em;
-    border-right: none;
-    border-left: none;
-}
+		tr {
+			border:none;
+		}
 
-table.schedule tr.weekdayF td {
-    padding-bottom: 1ex;
-    border-bottom: 1pt dotted;
-}
+		th, td {
+			border-collapse:collapse;
+			border: 1px solid black;
+			padding: 15px;
+			padding-top:0;
+			padding-bottom:0;
+			border-top:none;
+			border-bottom:none;
+		} td:first-of-type, th:first-of-type {
+			border-left:none;
+		} td:last-of-type, th:last-of-type {
+			border-right:none;
+		}
 
-table.schedule .emph {
-    font-style: italic;	
-}
+		table.schedule { 
+		    border-spacing: 0;
+		}
 
-table.schedule * div {
-    padding-bottom: 1ex;
-}
-table.schedule tr.weekdayW td {
-    background-color: rgba(255,255,0,0.5);
-}
+		table.schedule td,th {
+		    padding-top: 1ex;
+		    padding-bottom: 1ex;
+		    padding-right: 2em;
+		    vertical-align: top;
+		}
 
-table.schedule tr.weekdayR{
- 	border-bottom: 1pt dotted;
-}
+		table.schedule th {
+		    border-bottom: 2pt solid;
+		}
 
-tr.midterm, tr.final{
-	border-top: 1pt dotted;
-}
+		table.schedule .weekday {
+		    padding-right: 0.5em;
+		    border-right: none;
+		    border-left: none;
+		}
 
-td.midterm, td.final{
-	background-color: rgba(255,255,0,0.9);
-}
-#fall_image {
-	height: 200px;
-	width: 100%;
-}
-tr.fallBreak {
-	border-bottom: 1pt dotted;
-}
+		table.schedule .emph {
+		    font-style: italic;	
+		}
 
+		table.schedule * div {
+		    padding-bottom: 1ex;
+		}
 
-.hidden {
-    position: absolute;
-    top: -9999em;
-    left: -9999em;
-}/* .hidden */
+		/* used with wednesday recitations make table more ledgible */
+		table.schedule tr.weekdayW td {
+		    background-color: rgba(255,255,0,0.5);
+		}
+
+		/* used if non Friday recitation to note end of week */
+		table.schedule tr.weekdayR {
+		 	border-bottom: 1pt dotted;
+		}
+
+		/* used for Friday recitation semesters */
+		/*table.schedule tr.weekdayF td {
+		    padding-bottom: 1ex;
+		    border-bottom: 1pt dotted;
+		}*/
+
+		tr.midterm, tr.final{
+			border-top: 1pt dotted;
+		}
+
+		/* theres an exam... paint it gold */
+		td.midterm, td.final{
+			background-color: rgba(255,255,0,0.9);
+		}
+
+		/* used for the fall break image */
+		/*I suppose this could be a standard for table images*/
+		#fall_image {
+			height: 200px;
+			width: 100%;
+		}
+		tr.fallBreak {
+			border-bottom: 1pt dotted;
+		}
