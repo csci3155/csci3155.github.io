@@ -1,0 +1,380 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content= "text/html; charset=utf-8">
+    <html lang="en">
+    <title>CSCI 3155 - Assignments</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylesBody.css" type= "text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <div class="headbar">
+      <header><h1 id="title">Principles of Programming Languages</h1></header>
+      <h2 id="subtitle">CSCI 3155 - Fall 2017</h2>
+      <a role="button" class="hidden" href="#content"> Skip to Content </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" role="button">Home</a>
+          </li>
+          <li>
+            <a href="schedule.html" role="button">Schedule</a>
+          </li>
+          <li>
+            <span class="active">Assignments</span>
+          </li>
+          <li>
+            <a href="http://moodle.cs.colorado.edu/course/view.php?id=84" target="_blank">Moodle</a>
+          </li>
+          <li>
+            <a href="https://piazza.com/colorado/spring2017/csci3155/" target="_blank">Piazza</a>
+          </li>
+          <li>
+            <a href="https://web-cog-csci3155.cs.colorado.edu" target="_blank">COG</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <aside id="sidebar" class="box">
+
+      <section><h3 class="current">&nbsp;&nbsp;&nbsp;Course Notes</h3>
+        <div class="current">
+          <i class="fa fa-link" aria-hidden="true"></i>
+          <a href="csci3155-notes.pdf">pdf</a>
+        </div>
+      </section>
+
+      <section><h3 class="collapseHeader">&nbsp;&nbsp;&nbsp;Staff</h3>
+
+        <!-- Instructor -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#instructor" href="#instructor"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;Instructor</button>
+        <div id="instructor" class="collapse">
+
+          <h4>
+            <img src="img/MHammer.jpg" alt="one person" width=80><br>
+            <i class="fa fa-link" aria-hidden="true"></i>
+            <a href="http://matthewhammer.org/" target="_blank">
+              Matthew A. Hammer
+            </a>
+          </h4>
+
+          <!-- <h4>Office Hours</h4>
+            <p>
+              TBD<br>
+              Or by appointment (<a href="matthew.hammer[at]colorado[dot]edu">email</a>)
+            </p> 
+            <br>-->
+
+        </div>
+
+        <!-- Teaching Assistants -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#ta" href="#ta"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;Teaching Assistants</button>
+        <div id="ta" class="collapse">
+
+          <img src="img/AustinHoller.jpg" alt="Austin's face" width=80><br>
+          <a href="mailto:austin.holler@colorado.edu">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            Austin Holler
+          </a>
+          <br>
+
+          <img src="img/Athithyaa.jpg" alt="Athithyaa's face" width=80><br>
+          <a href="mailto:athithyaa.panchapakesanrajeswari@colorado.edu">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            Athithyaa Rajeswari
+          </a>
+          <br>
+
+          <!-- <p>
+            <img src="img/name.jpg" alt="one person" width=80>
+            <br>
+            <i class="fa fa-link" aria-hidden="true"></i>
+            <a href="mailto:first.last@colorado.edu">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              First Last
+            </a>
+          </p> 
+          <br>-->
+        </div>
+
+        <!-- Course Assistants -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#ca" href="#ca"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;Course Assistants</button>
+        <div id="ca" class="collapse">
+
+          <img src="img/nolan.jpg" alt="Nolan's face" width=80><br>
+          <a href="mailto:Nolan.Cretney@colorado.edu">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            Nolan Cretney
+          </a>
+          <br>
+
+          <!-- <img src="img/name.jpg" alt="one person" width=80><br> -->
+          <i class="fa fa-smile-o fa-5x" aria-hidden="true"></i><br>
+          <a href="mailto:first.last@colorado.edu">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            First Last
+          </a>
+          <br>
+
+          <!-- <p>
+            <img src="img/name.jpg" alt="one person" width=80><br>
+            <i class="fa fa-smile-o fa-5x" aria-hidden="true"></i><br>
+            <a href="mailto:first.last@colorado.edu">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              First Last
+            </a>
+          </p>
+          <br> -->
+
+        </div>
+
+        <!-- Other Assistats -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#oa" href="#oa"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;Other Assistants</button>
+        <div id="oa" class="collapse">
+
+          <h4>COG Admin</h4>
+
+          <!-- <img src="img/name.jpg" alt="one person" width=80><br> -->
+          <i class="fa fa-smile-o fa-5x" aria-hidden="true"></i><br>
+          <a href="mailto:Evan.Su@colorado.edu">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            Evan Su
+          </a>
+          <br>
+
+        </div>
+      </section>
+      <section><h3 class="current">&nbsp;&nbsp;&nbsp;Office Hours</h3>
+        <div class="current">
+          <i class="fa fa-link" aria-hidden="true"></i>
+          <a href="https://calendar.google.com/calendar/embed?src=colorado.edu_v6qrj6ap1gi1i49pod0irqg98k%40group.calendar.google.com&ctz=America/Denver">
+            OH Calendar
+          </a>
+          <!-- <a href="#">
+            Office Hours Calendar
+          </a> -->
+        </div>
+      </section>
+      <section><h3 class="current">&nbsp;&nbsp;&nbsp;Meetings</h3>
+        <div class="current">
+          <ul>
+            <li>TR 9:30am-10:45am in
+            ECCR 1B40</li>
+          </ul>
+        </div>
+      </section>
+      <section><h3 class="current">&nbsp;&nbsp;&nbsp;Labs</h3>
+        <div class="current">
+          <ul>
+            <li> F 9:00am-9:50am in
+            KOBL 230</li>
+            <li>F 10:00am-10:50am in
+            KOBL 230</li>
+            <li>F 11:00am-11:50am in
+            KOBL 102</li>
+            <li>F 12:00pm-12:50pm in
+            KOBL 230</li>
+            <li>F 1:00pm-1:50pm in
+            KOBL 230</li>
+          </ul>
+        </div>
+      </section>
+    </aside>
+
+    <main id="content">
+      <a href="#sidebar" role="button" class="hidden"> Skip to Sidebar </a>
+      <section><h3 id="labs" class="current">&nbsp;&nbsp;&nbsp;Lab Assignments</h3>
+        <div class="current">
+          <p>
+          Lab solutions should be submitted on the
+          <a href="#">course
+          moodle</a> and Cog by 6:00 p.m. on the due date.  Your write-up should be
+          submitted as a <b>PDF</b> file along with any code.  Either a
+          typeset or a (legible) handwritten write-up is acceptable.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h3 class="collapseHeader">&nbsp;&nbsp;&nbsp;Assignments</h3>
+        <!-- Mini-Project -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#project" href="#project"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Mini-Project</button>
+        <div id="project" class="collapse">
+          <p>
+            <b>Due Friday, December 9, 2016 (Practice Talks: December 2!)</b>
+            <ul>
+              <li><a href="https://github.com/csci3155/pppl-video/blob/master/README.md">README</a></li>
+              <li>To get your submission repository,
+                form a team of three and pick a team name. For our bookkeeping,
+                please prefix your team name with <tt>video-</tt> (e.g.,
+              <tt>video-anatomists</tt>). Then, log into moodle to find
+              an invitation link to
+              <a href="https://moodle.cs.colorado.edu/mod/url/view.php?id=4594">Create a Mini-Project Repository</a>
+                on Github Classroom. You will be prompted to either create a new team (where you enter the
+                team name on which you decided) or to join an existing team.
+              </li>
+            </ul>
+          </p>
+        </div>
+        <!-- Lab Assignment 6 -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#lab6" href="#lab6"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Lab Assignment 6</button>
+        <div id="lab6" class="collapse">  
+          <p>
+            <b>Due Saturday, April 22, 2017 (Checkpoint: April 15!)</b>
+            <ul>
+              <li><a href="https://github.com/csci3155/pppl-lab6/blob/master/lab6.pdf">Handout</a></li> 
+              <li>Clone from the <a href="https://github.com/csci3155/pppl-lab6">Public Repository</a></li>
+              <li>To get your submission repository,
+                form a team of two for Lab 6 and pick a team name. For our bookkeeping,
+                please prefix your team name with <tt>lab6-</tt> (e.g.,
+              <tt>lab6-anatomists</tt>). Then, log into moodle to find
+              an invitation link to
+              <a href="#">Create a Lab 6 Repository</a> 
+                on Github Classroom. You will be prompted to either create a new team (where you enter the
+                team name on which you decided) or to join an existing team.
+              </li>
+            </ul>
+          </p>
+        </div>
+        <!-- Lab Assignment 5 -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#lab5" href="#lab5"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Lab Assignment 5</button>
+        <div id="lab5" class="collapse">
+          <p>
+            <b>Due Friday, April 7, 2017 (No Checkpoint!)</b>
+            <ul>
+              <li>Updated: You do NOT have to turn in anything to Cog this week.</li>
+              <li><a href="https://github.com/csci3155/pppl-lab5/blob/master/lab5.pdf">Handout</a></li>
+              <li>Clone from the <a href="https://github.com/csci3155/pppl-lab5">Public Repository</a></li>
+              <li>To get your submission repository,
+                form a team of two for Lab 5 and pick a team name. For our bookkeeping,
+                please prefix your team name with <tt>lab5-</tt> (e.g.,
+              <tt>lab5-anatomists</tt>). Then, log into moodle to find
+              an invitation link to
+              <a href="https://moodle.cs.colorado.edu/mod/url/view.php?id=7251">Create a Lab 5 Repository</a>
+                on Github Classroom. You will be prompted to either create a new team (where you enter the
+                team name on which you decided) or to join an existing team.
+              </li>
+            </ul>
+          </p>
+        </div>
+        <!-- Lab Assignment 4 -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#lab4" href="#lab4"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Lab Assignment 4</button>
+        <div id="lab4" class="collapse">
+          <p>
+           <ul>
+              <li><a href="https://github.com/csci3155/pppl-lab4/blob/master/lab4.pdf">Handout</a></li>
+              <li>Clone from the <a href="https://github.com/csci3155/pppl-lab4">Public Repository</a></li>
+              <li>To get your submission repository,
+                form a team of two for Lab 4 and pick a team name. For our bookkeeping,
+                please prefix your team name with <tt>lab4-</tt> (e.g.,
+              <tt>lab4-anatomists</tt>). Then, log into moodle to find
+              an invitation link to
+              <a href="https://moodle.cs.colorado.edu/mod/url/view.php?id=7246">Create a Lab 4 Repository</a>
+                on Github Classroom. You will be prompted to either create a new team (where you enter the
+                team name on which you decided) or to join an existing team.
+              </li>
+            </ul>
+          </p>
+        </div>
+        <!-- Lab Assignment 3 -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#lab3" href="#lab3"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Lab Assignment 3</button>
+        <div id="lab3" class="collapse">
+          <p>
+            <b>Due Friday, February 25, 2017 (Checkpoint: February 17!)</b>
+            <ul>
+              <li><a href="https://github.com/csci3155/pppl-lab3/blob/master/lab3.pdf">Handout</a></li>
+              <li><a href="https://github.com/csci3155/pppl-lab3">Public Repository</a></li>
+              <li>To get your submission repository,
+                form a team of two for Lab 3 and pick a team name. For our bookkeeping,
+                please prefix your team name with <tt>lab3-</tt> (e.g.,
+              <tt>lab3-anatomists</tt>). Then, log into moodle to find
+              an invitation link to
+              <a href="https://moodle.cs.colorado.edu/mod/url/view.php?id=7235">Create a Lab 3 Repository</a>
+                on Github Classroom. You will be prompted to either create a new team (where you enter the
+                team name on which you decided) or to join an existing team.
+              </li>
+            </ul>
+          </p>
+        </div>
+        <!-- Lab Assignment 2 -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#lab2" href="#lab2"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Lab Assignment 2</button>
+        <div id="lab2" class="collapse">
+          <p>
+          <b>Due Friday, February 10, 2017 (Checkpoint: February 4!)</b>
+          <ul>
+            <li><a href="https://github.com/csci3155/pppl-lab2/blob/master/lab2.pdf">Handout</a></li>
+            <li><a href="https://github.com/csci3155/pppl-lab2">Public Repository</a></li>
+            <li>To get your submission repository,
+            form a team of two for Lab 2 and pick a team name. For our bookkeeping,
+            please prefix your team name with <tt>lab2-</tt> (e.g.,
+            <tt>lab2-anatomists</tt>). Then, log into moodle to find
+            an invitation link to
+            <a href="https://moodle.cs.colorado.edu/mod/url/view.php?id=7228">Create a Lab 2 Repository</a>
+            on Github Classroom. You will be prompted to either create a new team (where you enter the
+            team name on which you decided) or to join an existing team.
+            </li>
+          </ul>
+          </p>
+        </div>
+        <!-- Lab Assignment 1 -->
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#lab1" href="#lab1"><i class="fa fa-openid" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Lab Assignment 1</button>
+        <div id="lab1" class="collapse">
+          <p>
+          <b>Due Friday, January 27, 2017 (Checkpoint: January 21, Saturday!)</b>
+          <ul>
+            <li><a href="https://github.com/csci3155/pppl-lab1/blob/master/lab1.pdf">Handout</a></li>
+            <li>Clone from the <a href="https://github.com/bechang/pppl-labs">project repository</a> with the following command:
+              <blockquote><code>
+                $ git clone -b lab1 https://github.com/bechang/pppl-labs.git lab1
+              </code></blockquote>
+              and then following the README instructions to set up in IntelliJ.
+            </li>
+          </ul>
+          </p>
+        </div>
+      </section>
+
+      <section><h3 class="current" id="participation">&nbsp;&nbsp;&nbsp;Class Participation</h3>
+        <div class="current">
+
+          <p>Classes focus on discussion, so it is certainly important to
+          participate in class and read the readings beforehand.</p>
+
+          <p>Students are expected to be active participants in the online forums (e.g., around at least 1 substantive post per week).  You may and are encouraged to post comments or questions about the reading before the class where we will cover it.  Posting early will help focus our discussion. </p>
+
+          <p>
+          Here are some examples of good comments:
+          <ul>
+            <li>Questions about the reading or the class discussion.</li>
+            <li>Thoughtful answers to other people's questions.</li>
+            <li>Clarification of some point discussed in class.</li>
+            <li>Comments on a web resource related to a reading or class
+              discussion (e.g., you happened upon an interesting blog post
+              related to our discussion).</li>
+          </ul>
+          </p>
+
+          <p> If everything from a class meeting seems clear to you, try to come up with a question that tests your classmates' understanding. Put yourself in the position of an instructor! </p>
+
+          <p> Overall, the intent is for you to to take a moment to reflect upon the day's reading or class discussion.  I will read all posts, but I may not respond to all of them (e.g., if I believe your classmates'
+          answers are sufficient). </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        For more information about the course and its materials, contact :  
+        <a href="mailto:evan.chang@colorado.edu" role="button">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          Evan Chang
+        </a>
+      </p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
