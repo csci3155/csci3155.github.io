@@ -1,0 +1,292 @@
+/***** Default Body *****/
+body {
+    color: black;
+    font-family: verdana, helvetica, sans-serif;
+    font-size: 85%;
+    margin: 0;
+}
+
+#title, h1, h2, h3, h4 {
+    font-family: "trebuchet ms", helvetica, sans-serif;
+}
+
+acronym {
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    cursor: help;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    border: none;
+}
+
+p {
+    text-align: justify;
+}
+
+blockquote {
+	border: 1px dashed;
+	padding: 1ex 1em 1ex 1em;
+}
+
+blockquote pre {
+	margin: 0;	
+}
+
+.math {
+	font-style: italic;	
+}
+
+.code {
+	font-family: "Courier New", Courier, monospace;
+	font-style: normal;
+}
+
+.keyword {
+	font-weight: bold;
+	font-style: normal;
+}
+
+.display {
+	margin-left: 5%;
+	margin-right: 5%;
+    text-align: center;
+}
+
+.caption {
+	border-top: 1px solid;
+	font-size: 95%;
+	text-align: justify;
+}
+
+.smallcaps {
+	font-variant: small-caps;
+}
+/***** Header *****/
+#header {
+    overflow: hidden;
+    padding: 1ex 1em 0 1em;
+}
+
+#title {
+    font-weight: bold;
+    font-size: 200%;
+    line-height: 1.5em;
+}
+
+.compact-header #title {
+	font-size: 110%;
+	line-height: normal;
+}
+
+#logo {
+    float: left;
+    margin-right: 1em;
+}
+
+#menu {
+    overflow: hidden;
+    padding: 0 1em 0 1em;
+}
+
+#menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    list-style-type: none;
+}
+
+#nav {
+    float: right;
+    font-size: 90%;
+}
+
+#nav li, .inline-controls li {
+    float: left;
+    margin-left: 1em;
+    text-align: center
+}
+
+#nav a, #nav span.here {
+    float: left;
+    width: 9em;
+    padding: 3px 0;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+/***** Right Bar *****/
+#sidebar {
+    float: right;
+    clear: right;
+    width: 20em;
+    margin: 2ex 1em 0 0;
+}
+
+#sidebar h1 {
+    font-weight: bold;
+    font-size: 115%;
+    margin-top: 0;
+    border-bottom: 1px dotted;
+}
+
+#sidebar h2 {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+#sidebar h3 {
+    font-weight: bold;
+    font-size: 110%;
+    margin-bottom: 1pt;
+}
+
+#sidebar h4 {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 1pt;
+}
+
+.box {
+    padding: 1em;
+    margin-bottom: 1ex;
+}
+
+.box img {
+    border: 1px solid;
+}
+
+.box a:hover img {
+    border: 1px solid;
+}
+
+.box div {
+    margin-bottom: 1ex;
+}
+
+.block * {
+    display: block;
+}
+
+.people-list a {
+    margin-top: 1.5ex;
+}
+/***** Body Text *****/
+#content {
+    margin: 4ex 22.5em 2ex 1em;
+}
+
+#content.full-width {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+#content h1 {
+    font-weight: bold;
+    font-size: 150%;
+    line-height: 1.5em;
+    border-bottom: 1px solid;
+    padding-bottom: 0.5ex;
+}
+
+#content h2 {
+    font-weight: bold;	
+    font-size: 135%;
+}
+
+#content li {
+    margin-top: 1ex;
+}
+
+.item {
+    margin: 2ex 0 2ex 0;
+}
+
+.item-date {
+    float: right;
+    margin-left: 1em;
+}
+
+.item-header {
+    font-weight: bold;
+}
+
+.item-note {
+    margin: 3px 0 0 2em;
+}
+
+.bottom-skip {
+    margin-bottom: 4ex;
+}
+/***** Inline box *****/
+.inline-box {
+    margin: 1ex 2em 1ex 2em;
+    text-align: justify;
+    display: none;
+}
+
+.inline-header {
+    font-variant: small-caps;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.inline-menu {
+    margin: 3px 0 0 2em;
+}
+
+.inline-controls {
+    float: right;
+    font-size: 80%;
+}
+
+.inline-controls a {
+    float: left;
+}
+
+.embedded-flash {
+    margin-top: 2ex;
+    height: 400px;
+}
+/***** Tables *****/
+table.schedule { 
+    border-spacing: 0;
+}
+
+table.schedule td,th {
+    padding-top: 1ex;
+    padding-bottom: 1ex;
+    padding-right: 2em;
+    vertical-align: top;
+}
+
+table.schedule th {
+    border-bottom: 2pt solid;
+}
+
+table.schedule .weekday {
+    padding-right: 0.5em;
+}
+
+table.schedule tr.weekdayF td {
+    padding-bottom: 1ex;
+    border-bottom: 1pt dotted;
+}
+
+table.schedule .emph {
+    font-style: italic;	
+}
+
+table.schedule * div {
+    padding-bottom: 1ex;
+}
