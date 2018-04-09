@@ -213,7 +213,7 @@ def rename(env: Map[String, String], e: Expr)(i: Int): (Int,Expr) = {
       val (ip, e1p) = ren(e1)(i)
       // Then rename e2. Note that the "state" that was returned from renaming
       // e1 needs to be passed as the "state" parameter to renaming e2.
-      val (ipp, e2p) = ren(e2p)(ip)
+      val (ipp, e2p) = ren(e2)(ip)
       // Now the returned state is ipp.
       (ipp, Binary(Plus, e1p, e2p))
     case Decl(MConst, x, e1, e2) =>
